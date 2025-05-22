@@ -1,0 +1,38 @@
+
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #00B1B1; /* Bootstrap blue */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #00B1B1; /* Bootstrap blue */
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.doctor-image {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+}
+
+.text-black {
+  color: black;
+}
