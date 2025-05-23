@@ -97,13 +97,13 @@ async function saveAsPDF() {
   const signatureData = canvas.toDataURL("image/png");
   doc.addImage(signatureData, "PNG", 10, y, 60, 30);
 
+  // Show success modal
+  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+  successModal.show();
+
   doc.save(`${patientId}.pdf`);
 
   // Clear form and signature
   document.getElementById("patientForm").reset();
   clearSignature();
-
-  // Show success modal
-  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-  successModal.show();
 }
