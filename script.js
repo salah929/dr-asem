@@ -73,8 +73,8 @@ async function saveAsPDF() {
     return;
   }
 
+  doc.setFontSize(14);
   let y = 10;
-  doc.setFontSize(16);
   doc.text("Patient Information Report", 10, y);
   y += 10;
   doc.setFontSize(12);

@@ -40,7 +40,7 @@ h2 {
 #save-btn {
   width: 8rem;
   height: 4rem;
-  font-size:x-large;
+  font-size:xx-large;
   font-weight: bold;
   background-color: #00B1B1;
 }
@@ -56,4 +56,87 @@ h2 {
 
 .custom-blue-btn:hover {
   background-color: #009191 !important; /* Slightly darker on hover */
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.2rem;
+  }    
+  h2 {
+    font-size: 1.8rem;
+  } 
+  form {
+    font-size: 95%;
+  }
+  input {
+    font-size: 95% !important;
+  }
+  #save-btn {
+    width: 7rem;
+    height: 3.5rem;
+    font-size:x-large;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }    
+  h2 {
+    font-size: 1.6rem;
+  } 
+  form {
+    font-size: 90%;
+  }
+  input {
+    font-size: 90% !important;
+  }
+  #save-btn {
+    width: 6rem;
+    height: 3rem;
+    font-size:large;
+  }
+}
+
+  @media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }    
+  h2 {
+    font-size: 1.4rem;
+  } 
+  form {
+    font-size: 85%;
+  }
+  input {
+    font-size: 85% !important;
+  }
+  #save-btn {
+    width: 5rem;
+    height: 2.5rem;
+    font-size:medium;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }    
+  h2 {
+    font-size: 1.3rem;
+  } 
+  form {
+    font-size: 75%;
+  }
+  input {
+    font-size: 60% !important;
+  }
+  #save-btn {
+    width: 5rem;
+    height: 2.5rem;
+    font-size:medium;
+  }
 }
