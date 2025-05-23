@@ -79,5 +79,9 @@ async function saveAsPDF() {
   doc.addImage(signatureData, "PNG", 10, y + 10, 60, 30);
   doc.text(`Notes: ${notes}`, 10, y);
   let patientId = document.getElementById("patientId").value;
+  if (patientId == null || patientId == "") {
+    alert("Patient ID is blank. The file could not be saved.");
+    return;
+  }
   doc.save(patientId);
 }

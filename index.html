@@ -14,11 +14,11 @@
 
 <div class="container text-center my-5">
   <!-- Title -->
-   <h1 class="mb-4"><span class="text-black">Dr. med. Asem</span> RAZOUK</h1>
+   <h1 class="mb-4"><span class="text-black">Dr. med. Asem</span> Razouk</h1>
   <h2 class="mb-4">Patient <span class="text-black">Form</span></h2>
 
   <!-- Form -->
-  <form id="patientForm" class="text-start mx-auto" style="max-width: 600px;">
+  <form id="patientForm" class="text-start mx-auto">
     <div class="mb-3">
       <label for="patientId" class="form-label">Patient ID:</label>
       <input type="text" class="form-control" id="patientId" required>
@@ -56,9 +56,11 @@
     </div>
 
     <div class="mb-3">
-      <label class="form-label">Signature:</label>
-      <canvas id="signaturePad" width="600" height="200" style="border: 1px solid #ccc; width: 100%; height: auto;"></canvas>
-      <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="clearSignature()">Clear Signature</button>
+        <label class="form-label">Signature:</label>
+        <div>
+            <canvas id="signaturePad" width="600" height="200" style="border: 1px solid #ccc; width: 600px; height: 200px; background-color: white;"></canvas>
+        </div>
+        <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="clearSignature()">Clear Signature</button>
     </div>
 
     <div class="text-center">
