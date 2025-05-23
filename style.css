@@ -37,10 +37,23 @@ h2 {
   touch-action: none; /* for mobile/touch support */
 }
 
-#save {
+#save-btn {
   width: 8rem;
   height: 4rem;
   font-size:x-large;
   font-weight: bold;
   background-color: #00B1B1;
+}
+
+.custom-blue {
+  background-color: #00B1B1 !important;
+}
+
+.custom-blue-btn {
+  background-color: #00B1B1 !important;
+  border: none;
+}
+
+.custom-blue-btn:hover {
+  background-color: #009191 !important; /* Slightly darker on hover */
 }

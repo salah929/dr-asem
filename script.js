@@ -99,10 +99,11 @@ async function saveAsPDF() {
 
   doc.save(`${patientId}.pdf`);
 
-  // Reset the form and signature pad
+  // Clear form and signature
   document.getElementById("patientForm").reset();
   clearSignature();
 
-  // Show success alert
-  alert("Form saved successfully!");
+  // Show success modal
+  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+  successModal.show();
 }
